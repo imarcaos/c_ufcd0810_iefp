@@ -56,10 +56,10 @@ Lista de exercícios e tarefas que tivemos de fazer durante as aulas
 
         Menu
         ------------------------------------------------------------------------------------------------------------------------
-        1 ? Recolha de dados.
-        2 - Listagem de dados.
-        3 - Listagem de dados com total final.
-        4 ? Listar a filial com maior venda.
-        9 - Terminar o programa.
+        - 1 ? Recolha de dados.
+        - 2 - Listagem de dados.
+        - 3 - Listagem de dados com total final.
+        - 4 ? Listar a filial com maior venda.
+        - 9 - Terminar o programa.
 
     
