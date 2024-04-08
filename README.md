@@ -4,6 +4,8 @@
 ## Formação do IEFP da Ação: 23328 - Programador de Informática 
 
 Lista de exercícios e tarefas que tivemos de fazer durante as aulas
+Os códigos estão divididos por Aulas ex.: Aula1, Aula2, ...
+Sempre que houver enunciados, estarão juntamente com o código.
 
 - Aula 1 - Continuação da UFCD 0809 - Programação em C/C++ Fundamentos
     - Exercício sobre Matrizes
@@ -39,29 +41,14 @@ Lista de exercícios e tarefas que tivemos de fazer durante as aulas
     - Tarefa 1 da Aula 2 - correção do formador
     - ex1 functions array - Foram criadas diversas função para análise e cálculo de notas de alunos armazenadas no array
         - função para recolher, mostrar, alterar, médias, aprovado, reprovado e melhores notas.
-    - Tarefa 2 - Recolha dos valores de vendas das Filiais da Empresa (Tarefa Individual):
-        1. Determinada empresa pretende desenvolver um programa em C que lhe permita realizar a recolha do total das vendas realizadas nas suas 3 filiais em 2023. Crie uma estrutura de arrays(tabelas) para recolha e manipulação dos dados.
-        2. Considere as seguintes opções:
-            - Recolha de dados.
-            - Listagem de dados.
-            - Listagem de dados com total final.
-            - Listar a filial com maior venda.
-            - Terminar o programa.
-
-        3. Nota: Utilize (arrays)
-        Possível Layout:
-        ------------------------------------------------------------------------------------------------------------------------
-        Empresa VendeTudo, S.A.
-        Vendas (2023)
-
-        Menu
-        ------------------------------------------------------------------------------------------------------------------------
-        - 1 ? Recolha de dados.
-        - 2 - Listagem de dados.
-        - 3 - Listagem de dados com total final.
-        - 4 ? Listar a filial com maior venda.
-        - 9 - Terminar o programa.
+    - Tarefa 2 - Recolha dos valores de vendas das Filiais da Empresa
+        - código: functions-array-T02.c
+        - Tarefa indidual, enunciado no código.
 
 - Aula 4 - Funções e Arrays
     - Tarefa 2 da Aula 3 - correção do Formador
-    - Tarefa 3 - Clínica com Registo de Marcações - Formador
+        - código: functions-T02-correcao-form.c
+    - Tarefa 3 - Clínica com Registo de Marcações
+        - código: functions-T03.c
+        - O Formador fez o ponto 1 do menu de opções (Realizar Marcações)
+        - Minha tarefa, construir o ponto 2 (Marcação de Urgência) e ponto 3 (Eliminar Marcação)
