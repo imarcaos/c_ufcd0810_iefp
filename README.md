@@ -62,4 +62,6 @@ Lista de exercícios e tarefas que tivemos de fazer durante as aulas
         - 4 ? Listar a filial com maior venda.
         - 9 - Terminar o programa.
 
-    
+- Aula 4 - Funções e Arrays
+    - Tarefa 2 da Aula 3 - correção do Formador
+    - Tarefa 3 - Clínica com Registo de Marcações - Formador
