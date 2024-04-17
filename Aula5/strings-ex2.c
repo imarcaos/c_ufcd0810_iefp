@@ -7,7 +7,7 @@
 #include <time.h>
 
 /*
-Manipulação de Strings
+gets é usado para o input de uma string em C
 */
 
 int main(){

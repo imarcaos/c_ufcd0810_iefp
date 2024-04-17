@@ -14,7 +14,7 @@ int marcacoes[10]={0,0,0,0,0,0,0,0,0,0};
 
 void menu();
 void marcacao();
-void urgencia();
+void urgente();
 void eliminar();
 
 int main(){
@@ -28,10 +28,10 @@ int main(){
                 marcacao();
                 break;
             case 2:
-                urgencia();                
+                urgente();
                 break;    
             case 3:
-                eliminar();                
+                eliminar();
                 break;                 
  
         }
@@ -42,7 +42,7 @@ int main(){
 void menu(){
         system("cls");
         printf("Clinica Quebra-Ossos\n");
-        printf("Registo de marcações\n\n");
+        printf("Registo de marcaÃ§Ãµes\n\n");
         printf("----------------------------------------\n");
         printf("  1|  2|  3|  4|  5|  6|  7|  8|  9| 10|\n");
         printf("----------------------------------------\n");
@@ -50,124 +50,109 @@ void menu(){
             printf("%3d|",marcacoes[i]);
         }
         printf("\n------------------------------------------\n");
-        printf("\n1-Realizar marcação");
-        printf("\n2-Marcação de urgência");
-        printf("\n3-Eliminar a marcação");
+        printf("\n1-Realizar marcaÃ§Ã£o");
+        printf("\n2-MarcaÃ§Ã£o de urgÃªncia");
+        printf("\n3-Eliminar a marcaÃ§Ã£o");
         printf("\n9-Terminar o programa");
-        printf("\nDigite a sua opção:");
+        printf("\nDigite a sua opÃ§Ã£o:");
 }
 
 void marcacao(){
     int utente;
     int existe=0;
     system("cls");
-    printf("Realizar Marcação\n");
-    // ver se a fila está cheia
+    printf("Realizar MarcaÃ§Ã£o\n");
+    // ver se a fila estÃ¡ cheia
     if(marcacoes[9]!=0){
-        printf("\nA fila está cheia. Aguarde um momento sff.\n");
+        printf("\nA fila estÃ¡ cheia. Aguarde um momento sff.\n");
         Sleep(3000);
         return;
     }
 
     do{
-        printf("\nDigite o nº de utente (1 e 999):");
+        printf("\nDigite o nÂº de utente (1 e 999):");
         scanf("%d",&utente);
     }while(utente<1 || utente>999);
-    // ver se o utente já existe na fila
+    // ver se o utente jÃ¡ existe na fila
     for(int i=0;i<10;i++){
         if(marcacoes[i]==utente){
-            printf("Nº de utente já existe!!!\n");
+            printf("NÂº de utente jÃ¡ existe!!!\n");
             existe=1;
             Sleep(3000);
             break;
         }
     }
     if(existe==0){
-        // inserir o utente na 1ª posição livre da fila
+        // inserir o utente na 1Âª posiÃ§Ã£o livre da fila
         for(int i=0;i<10;i++){
             if(marcacoes[i]==0){
                 marcacoes[i]=utente;
                 break;
             }
         }
-        printf("\nMarcação efetuada. Aguarde um momento sff.\n");
+        printf("\nMarcaÃ§Ã£o efetuada. Aguarde um momento sff.\n");
         Sleep(3000);
     }
 }
 
-void urgencia(){
+void urgente(){
     int utente;
-    int existe=0;
-
     system("cls");
-    printf("Realizar Marcação de Urgência\n");
-    // ver se a fila está cheia
+    printf("MarcaÃ§Ã£o Urgente\n");
+    // ver se a fila estÃ¡ cheia
     if(marcacoes[9]!=0){
-        printf("\nA fila está cheia. Aguarde um momento sff.\n");
+        printf("\nA fila estÃ¡ cheia. Aguarde um momento sff.\n");
         Sleep(3000);
         return;
     }
 
     do{
-        printf("\nDigite o nº de utente (1 e 999):");
+        printf("\nDigite o nÂº de utente (1 e 999):");
         scanf("%d",&utente);
     }while(utente<1 || utente>999);
-    // ver se o utente já existe na fila
+    // ver se o utente jÃ¡ existe na fila
     for(int i=0;i<10;i++){
         if(marcacoes[i]==utente){
-            printf("Nº de utente já existe!!!\n");
-            existe=1;
+            printf("NÂº de utente jÃ¡ existe!!!\n");
             Sleep(3000);
+            return;
+        }
+    }
+    
+    // inserir a urgÃªncia na 1Âª posiÃ§Ã£o
+    for(int i=9;i>0;i--){
+        marcacoes[i]=marcacoes[i-1];
+    }
+    marcacoes[0]=utente;
+    printf("\nMarcaÃ§Ã£o urgente efetuada. Aguarde um momento sff.\n");
+    Sleep(3000);
+}
+void eliminar(){
+    int utente;
+    int existe=0;
+    system("cls");
+    printf("Eliminar MarcaÃ§Ã£o\n");
+    do{
+        printf("\nDigite o nÂº de utente (1 e 999):");
+        scanf("%d",&utente);
+    }while(utente<1 || utente>999);
+    // ver se o utente jÃ¡ existe na fila
+    for(int i=0;i<10;i++){
+        if(marcacoes[i]==utente){
+            existe=1;
+            for(int j=i;j<9;j++){
+                marcacoes[j]=marcacoes[j+1];
+            }
+            marcacoes[9]=0;
+            printf("\nO utente foi eliminado. Aguarde um momento sff.\n");
+            Sleep(3000);            
             break;
         }
     }
     if(existe==0){
-        // inserir o utente na 1ª posição da fila
-        for(int i=9;i>=0;i--){            
-            if(i>0){
-                marcacoes[i]=marcacoes[i-1];
-            } else if(i==0){
-                marcacoes[i]=utente;
-                break;
-            }
-        }
-        printf("\nMarcação de Urgência efetuada. Aguarde um momento sff.\n");
+        printf("\nNÂº de utente nÃ£o existe na fila. Aguarde um momento sff.\n");
         Sleep(3000);
     }
-}
-
-void eliminar(){
-    int utente, removido=0, indice=0;
-
-    system("cls");
-    printf("Remover Utente da Fila de Espera\n");    
-    do{
-        printf("\nDigite o nº de utente (1 e 999):");
-        scanf("%d",&utente);
-    }while(utente<1 || utente>999);
-
-    // remove o utente existente na fila
-    for(int i=0;i<10;i++){
-        if(marcacoes[i]==utente){
-            removido= 1;
-            indice= i;
-            break;
-        }       
-    }
-    if(removido==1){
-        // Organizar posição da fila de espera
-        for(int i=indice;i<10;i++){            
-            if(i<9) {
-                marcacoes[i]=marcacoes[i+1];
-            } else {
-                marcacoes[i]=0;
-                break;
-            }
-        }
-        printf("\nUtente Removido com Sucesso!!. Aguarde um momento sff.\n");
-        Sleep(3000);
-    } else {
-        printf("Nº de utente inexistente!!!\n");
-        Sleep(3000);
-    }
+    
+    
 }

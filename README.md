@@ -57,3 +57,4 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Tarefa 3 da Aula 4 - Versão do Formador
     - Strings - utilizando para entrada o scanf para comparar com o gets, strings-ex1.c
     - Strings - utilizando para entrada o gets, strings-ex2.c
+    - Jogo Quiz - História de Portugal - matrizes e strings
