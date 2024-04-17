@@ -38,7 +38,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
         6. Nota: Crie um menu de escolha para as funções anteriores.
 
 - Aula 3 - Funções e Arrays
-    - Tarefa 1 da Aula 2 - correção do formador
+    - Tarefa 1 da Aula 2 - Versão do formador
     - ex1 functions array - Foram criadas diversas função para análise e cálculo de notas de alunos armazenadas no array
         - função para recolher, mostrar, alterar, médias, aprovado, reprovado e melhores notas.
     - Tarefa 2 - Recolha dos valores de vendas das Filiais da Empresa
@@ -46,9 +46,13 @@ Sempre que houver enunciados, estarão juntamente com o código.
         - Tarefa indidual, enunciado no código.
 
 - Aula 4 - Funções e Arrays
-    - Tarefa 2 da Aula 3 - correção do Formador
+    - Tarefa 2 da Aula 3 - Versão do Formador
         - código: functions-T02-correcao-form.c
     - Tarefa 3 - Clínica com Registo de Marcações
         - código: functions-T03.c
         - O Formador fez o ponto 1 do menu de opções (Realizar Marcações)
         - Minha tarefa, construir o ponto 2 (Marcação de Urgência) e ponto 3 (Eliminar Marcação)
+
+- Aula 5 - Strings
+    - Tarefa 3 da Aula 4 - Versão do Formador
+    - Strings -strings-ex1.c
