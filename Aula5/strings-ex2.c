@@ -14,9 +14,9 @@ int main(){
     setlocale(LC_ALL,"Portuguese");
     char nome[30], apelido[30];
     printf("Digite o seu nome: ");
-    scanf("%s", nome); //não usamos o c(char) e sim s(string)
-    printf("Digite o seu apelido: ");
-    scanf("%s", apelido);
+    scanf(nome); //não usamos o c(char) e sim s(string)
+    gets("Digite o seu apelido: ");
+    gets(apelido);
     printf("O seu nome é: %s, %s", apelido, nome);
 
 

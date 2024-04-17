@@ -55,4 +55,5 @@ Sempre que houver enunciados, estarão juntamente com o código.
 
 - Aula 5 - Strings
     - Tarefa 3 da Aula 4 - Versão do Formador
-    - Strings -strings-ex1.c
+    - Strings - utilizando para entrada o scanf para comparar com o gets, strings-ex1.c
+    - Strings - utilizando para entrada o gets, strings-ex2.c
