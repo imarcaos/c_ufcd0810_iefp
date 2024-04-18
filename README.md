@@ -61,4 +61,5 @@ Sempre que houver enunciados, estarão juntamente com o código.
 
 - Aula 6 - Strings
     - Continuando com a implementação do jogo Quiz
-    - Estruct - Estruta - estrutura-ex1.c 
+    - Struct - Estruta - estrutura-ex1.c parte2
+    - Comparação entre o Struct e as matrizes - estrutura-ex1.c final
