@@ -63,3 +63,4 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Continuando com a implementação do jogo Quiz
     - Struct - Estruta - estrutura-ex1.c parte2
     - Comparação entre o Struct e as matrizes - estrutura-ex1.c final
+    - Tarefa 04 com struct - Gestão de Funcionários v1 - struct-t04.c
