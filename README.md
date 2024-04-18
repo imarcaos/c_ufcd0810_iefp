@@ -58,3 +58,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Strings - utilizando para entrada o scanf para comparar com o gets, strings-ex1.c
     - Strings - utilizando para entrada o gets, strings-ex2.c
     - Jogo Quiz - História de Portugal - matrizes e strings
+
+- Aula 6 - Strings
+    - Continuando com a implementação do jogo Quiz
+    - Estruct - Estruta - estrutura-ex1.c 
