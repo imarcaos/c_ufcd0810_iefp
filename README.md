@@ -71,3 +71,4 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Ponteiros de memória, ponteiros-ex1.c
     - Escrita de ficheiros, cria um ficheiro com um número - fopen, file-write-ex2.c
     - Leitura de ficheiros lê o número adicionado ao ficheiro criado anteriormente - fscanf, file-read-ex3.c
+    - Estrutura de ficheiros, escrita e leitura - file-struct-ext4.c , file-struct_read-ext5.c
