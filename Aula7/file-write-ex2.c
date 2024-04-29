@@ -23,7 +23,7 @@ int main(){
     FILE *ficheiro;
 
     //ficheiro=fopne("e:\\score.txt","w"); // unidade e: e caminho se necessário
-    ficheiro=fopen("score.txt","w"); // salva no output na mesma para do executável
+    ficheiro=fopen("contatos.txt","w"); // salva no output na mesma para do executável
 
     if(ficheiro == NULL) {
         printf("Erro ao abrir o ficheiro!!");

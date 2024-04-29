@@ -69,4 +69,5 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Tarefa 04 com struct - Gestão de Funcionários Solução Formador - struct-t04-formador.c
         - Utilizando uma nova função de comparação strcmp(dado1, dado2)
     - Ponteiros de memória, ponteiros-ex1.c
-    - Leitura e escrita de ficheiros - fopen, file-write-ex2.c
+    - Escrita de ficheiros, cria um ficheiro com um número - fopen, file-write-ex2.c
+    - Leitura de ficheiros lê o número adicionado ao ficheiro criado anteriormente - fscanf, file-read-ex3.c
