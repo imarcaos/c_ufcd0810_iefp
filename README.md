@@ -72,3 +72,4 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Escrita de ficheiros, cria um ficheiro com um número - fopen, file-write-ex2.c
     - Leitura de ficheiros lê o número adicionado ao ficheiro criado anteriormente - fscanf, file-read-ex3.c
     - Estrutura de ficheiros, escrita e leitura - file-struct-ext4.c , file-struct_read-ext5.c
+    - Tarefa 5 - Adiciona a opção de escrita e leitura do ficheiro ao programa da Tarefa 4  - struct-file-t05.c
