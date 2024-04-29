@@ -1,4 +1,4 @@
-// UFCD 0810 - Aula 6 - 18/04/2024 - Marcos Melo
+// UFCD 0810 - Aula 7 - 29/04/2024 - Marcos Melo
 
 #include <stdio.h>
 #include <locale.h>
@@ -35,7 +35,7 @@ Menu
 9 - Terminar o programa.
 ----------------------------------
 
-V1 - falta completar: alterar e listagemDepartamento
+Código do Formador para correções
 */
 
 #define NF 50
@@ -46,16 +46,15 @@ void inserir();
 void listagemGeral();
 void alterar();
 void listagemDepartamento();
-void printInfo(int i);
 
-struct funcionario{
+struct funcionarios{
     int numFuncionario;
     char nomeFuncionario[30];
     char departamentoFuncionario[3];
     float salarioFuncionario;
 };
 
-struct funcionario fu[NF];
+struct funcionarios func[NF];
 
 
 int main(){
@@ -68,20 +67,17 @@ int main(){
 
 void menu(){
     system("cls");
-    printf("************************************");    
-    printf("\nEmpresa Indústria do Porco, S. A.");
-    printf("\nGestão de Funcionários");
-    printf("\n************************************");
-    printf("\n1-Inserir Funcionário");
+    printf("Gestão de funcionários");
+    printf("\n\n1-Inserir funcionário");
     printf("\n2-Alterar dados do funcionário");
-    printf("\n3-Listagem dos Funcionários");
-    printf("\n4-Listagem dos Funcionários por Departamentos");
+    printf("\n3-Listagem geral de funcionários");
+    printf("\n4-Listagem geral de funcionários por departamento");
     printf("\n0-Terminar o programa");
     printf("\nDigite a sua escolha:");
     scanf("%d",&escolha);
     if(escolha==0){
         printf("\nFim do programa\n");
-        Sleep(1000);
+        Sleep(2000);
         return;
     }
     else if(escolha==1){
@@ -101,7 +97,7 @@ void menu(){
         menu();
     } 
    else{
-        printf("\nOpção inválida\n");
+        printf("\nOpçãoo inválida\n");
         Sleep(2000);
         menu();
     }      
@@ -112,133 +108,113 @@ void inserir(){
     system("cls");
     printf("Registar funcionário\n");
     int numero=0;
-
-    if(fu[NF-1].numFuncionario!=0){
+    if(func[NF-1].numFuncionario!=0){
         printf("Estrutura completa.\n");
         Sleep(2000);
         return;
     }
     for(int i=0;i<NF;i++){
-        if(fu[i].numFuncionario==0){
+        if(func[i].numFuncionario==0){
 
-            // Nº Funcionário
             do{
-                printf("\nNúmero: ");
+                printf("\nNúmero:");
                 scanf("%d",&numero);
             }while(numero==0);
-            fu[i].numFuncionario=numero;
 
-            // Nome Funcionário
-            fflush(stdin);
-            printf("Nome: ");
-            gets(fu[i].nomeFuncionario);
-
-            // Departamento do Funcionário
-            fflush(stdin);
-            printf("Departamento: (adm)inistrativo / (sec)retaria / (ges)tão: ");
-            gets(fu[i].departamentoFuncionario);
+            func[i].numFuncionario=numero;
             
-            // Salário Funcionário
+            fflush(stdin);
+            printf("Nome:");
+            gets(func[i].nomeFuncionario);
+
+            fflush(stdin);
+            printf("Departamento (INF/RH/MAR/CON/PRO):");
+            gets(func[i].departamentoFuncionario);
+
             do{
-                printf("Salário do Funcionário: ");
-                scanf("%f",&fu[i].salarioFuncionario);
-            }while(fu[i].salarioFuncionario<0);
-            
+                printf("\nSalário:");
+                scanf("%f",&func[i].salarioFuncionario);
+            }while(func[i].salarioFuncionario<=0);
+   
             break;
         }
     }
 }
 void listagemGeral(){
     system("cls");
-    char menuVoltar;
-
-    printf("Listagem de Funcionários\n");
+    printf("Listagem de funcionários\n");
     for(int i=0;i<NF;i++){
-        if(fu[i].numFuncionario!=0){
-            printInfo(i);         
-        }
-    }
-    do {
-        fflush(stdin);
-        printf("\n\nDigite: C para continuar para menu: ");
-        scanf("%c",&menuVoltar);        
-    } while(menuVoltar!='C' && menuVoltar!='c');
-    printf("\n\nFim da listagem. Aguarde um pouco sff.\n");
-    //Sleep(2000);
-}
-
-
-void alterar(){
-    int numero;
-    char confirma;
-    system("cls");
-    printf("\nAlterar dados do Funcionário\n");
-    printf("Digite o número do Funcionário:");
-    scanf("%d",&numero);
-    for(int i=0;i<NF;i++){
-        if(fu[i].numFuncionario==numero){
-            printInfo(i);  
-
-            // Nome
-            fflush(stdin);
-            printf("\nDigite Ss para alterar o Nome: ");
-            scanf("%c",&confirma);
-            fflush(stdin);
-            if(confirma=='S' || confirma=='s'){
-                printf("Nome: ");
-                gets(fu[i].nomeFuncionario);
-            }
-
-            // Departamento
-            fflush(stdin);
-            printf("\nDigite Ss para alterar o Departamento:");
-            scanf("%c",&confirma);
-            fflush(stdin);
-            if(confirma=='S' || confirma=='s'){
-                fflush(stdin);
-                printf("Departamento: (adm)inistrativo / (sec)retaria / (ges)tão: ");
-                gets(fu[i].departamentoFuncionario);
-            }
-
-            // Salário
-            fflush(stdin);
-            printf("\nDigite Ss para alterar o Salário: ");
-            scanf("%c",&confirma);
-            if(confirma=='S' || confirma=='s'){
-                printf("Salário: ");
-                scanf("%f",&fu[i].salarioFuncionario);
-            }
-            printInfo(i); 
-            printf("\n\nFim da listagem. Aguarde um pouco sff.\n");
-            Sleep(3000);            
-            break;
-        }
-    }
-}
-
-
-void listagemDepartamento(){
-    char departamento[3];
-    system("cls");
-    printf("Listagem de Funcionários por Departamento\n");
-    fflush(stdin);
-    printf("Departamento: (adm)inistrativo / (sec)retaria / (ges)tão: ");
-    gets(departamento);
-    for(int i=0;i<NF;i++){
-        if(fu[i].numFuncionario!=0 && fu[i].departamentoFuncionario==departamento){
-            printf(departamento); // teste
-            printInfo(i);
+        if(func[i].numFuncionario!=0){
+            printf("\n%d",func[i].numFuncionario);
+            printf(" | %s",func[i].nomeFuncionario);
+            printf(" | %s",func[i].departamentoFuncionario);
+            printf(" | %.2f",func[i].salarioFuncionario);
         }
     }
     printf("\n\nFim da listagem. Aguarde um pouco sff.\n");
     Sleep(2000);
 }
+void alterar(){
+    int numero;
+    char confirma;
+    system("cls");
+    printf("\nAlterar dados do funcionário\n");
+    printf("Digite o número de funcionário:");
+    scanf("%d",&numero);
+    for(int i=0;i<NF;i++){
+        if(func[i].numFuncionario==numero){
+            printf("\n%d",func[i].numFuncionario);
+            printf(" | %s",func[i].nomeFuncionario);
+            printf(" | %s",func[i].departamentoFuncionario);
+            printf(" | %.2f",func[i].salarioFuncionario);    
 
+            fflush(stdin);
+            printf("\nDigite Ss para alterar o nome:");
+            scanf("%c",&confirma);
+            fflush(stdin);
+            if(confirma=='S' || confirma=='s'){
+                printf("Nome:");
+                gets(func[i].nomeFuncionario);
+            }
 
-void printInfo(int i) {
-    printf("\n---------------------------------------");
-    printf("\n%d",fu[i].numFuncionario);
-    printf(" | %s",fu[i].nomeFuncionario);
-    printf(" | %s",fu[i].departamentoFuncionario);
-    printf(" | %.2f",fu[i].salarioFuncionario);  
+            fflush(stdin);
+            printf("\nDigite Ss para alterar o departamento:");
+            scanf("%c",&confirma);
+            fflush(stdin);
+            if(confirma=='S' || confirma=='s'){
+                printf("Departamento:");
+                gets(func[i].departamentoFuncionario);
+            }
+
+            fflush(stdin);
+            printf("\nDigite Ss para alterar o salário:");
+            scanf("%c",&confirma);
+            if(confirma=='S' || confirma=='s'){
+                printf("Salário:");
+                scanf("%f",&func[i].salarioFuncionario);
+            }
+
+            printf("\n\nFim da alteração. Aguarde um pouco sff.\n");
+            Sleep(2000);            
+            break;
+        }
+    }
+}
+void listagemDepartamento(){
+    char dep[3];
+    system("cls");
+    printf("Listagem de funcionários por departamento\n");
+    fflush(stdin);
+    printf("Departamento:");
+    gets(dep);
+    for(int i=0;i<NF;i++){
+        if(func[i].numFuncionario!=0 && strcmp(func[i].departamentoFuncionario,dep) == 0){
+            printf("\n%d",func[i].numFuncionario);
+            printf(" | %s",func[i].nomeFuncionario);
+            printf(" | %s",func[i].departamentoFuncionario);
+            printf(" | %.2f",func[i].salarioFuncionario);
+        }
+    }
+    printf("\n\nFim da listagem. Aguarde um pouco sff.\n");
+    Sleep(2000);
 }

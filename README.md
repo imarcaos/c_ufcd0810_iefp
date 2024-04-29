@@ -64,3 +64,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Struct - Estruta - estrutura-ex1.c parte2
     - Comparação entre o Struct e as matrizes - estrutura-ex1.c final
     - Tarefa 04 com struct - Gestão de Funcionários v1 - struct-t04.c
+
+- Aula 7 - Strings
+    - Tarefa 04 com struct - Gestão de Funcionários Solução Formador - struct-t04-formador.c
+        - Utilizando uma nova função de comparação strcmp(dado1, dado2)
