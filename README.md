@@ -68,3 +68,5 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 7 - Strings
     - Tarefa 04 com struct - Gestão de Funcionários Solução Formador - struct-t04-formador.c
         - Utilizando uma nova função de comparação strcmp(dado1, dado2)
+    - Ponteiros de memória, ponteiros-ex1.c
+    - Leitura e escrita de ficheiros - fopen, file-write-ex2.c
