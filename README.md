@@ -81,3 +81,4 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Exemplo invocando um método dentro da classe - classe_2.cpp
     - Método Construtor - classe_3.cpp
     - Vector - array de vetor dentro da classe, classe_4.cpp
+    - Tarefa 6 - Criar uma calculadora simples utilizando classe
