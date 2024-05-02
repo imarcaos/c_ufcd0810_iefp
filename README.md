@@ -76,3 +76,5 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 8 - Introduçãoo ao C++
     - Código exemplo para leitura e escrita em C++ usando o std , cmais_ex1.cpp
     - Código exemplo removendo o std do código utilizando o namespace , cmais_ex2.cpp
+    - Classes, objectos e métodos em C++
+    - Exemplo simples de uma classe, atributos, propriedades e variáveis - classe_1.cpp
