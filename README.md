@@ -73,3 +73,5 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Leitura de ficheiros lê o número adicionado ao ficheiro criado anteriormente - fscanf, file-read-ex3.c
     - Estrutura de ficheiros, escrita e leitura - file-struct-ext4.c , file-struct_read-ext5.c
     - Tarefa 5 - Adiciona a opção de escrita e leitura do ficheiro ao programa da Tarefa 4  - struct-file-t05.c
+- Aula 8 - Introdu��o ao C++
+    - C�digo exemplo para leitura e escrita em C++ , cmais_ex1.cpp
