@@ -78,3 +78,4 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Código exemplo removendo o std do código utilizando o namespace , cmais_ex2.cpp
     - Classes, objectos e métodos em C++
     - Exemplo simples de uma classe, atributos, propriedades e variáveis - classe_1.cpp
+    - Exemplo invocando um método dentro da classe - classe_2.cpp
