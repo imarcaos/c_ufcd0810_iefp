@@ -79,3 +79,4 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Classes, objectos e métodos em C++
     - Exemplo simples de uma classe, atributos, propriedades e variáveis - classe_1.cpp
     - Exemplo invocando um método dentro da classe - classe_2.cpp
+    - Método Construtor - classe_3.cpp
