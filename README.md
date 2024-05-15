@@ -73,7 +73,7 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Leitura de ficheiros lê o número adicionado ao ficheiro criado anteriormente - fscanf, file-read-ex3.c
     - Estrutura de ficheiros, escrita e leitura - file-struct-ext4.c , file-struct_read-ext5.c
     - Tarefa 5 - Adiciona a opção de escrita e leitura do ficheiro ao programa da Tarefa 4  - struct-file-t05.c
-- Aula 8 - Introduçãoo ao C++
+- Aula 8 - Introdução ao C++
     - Código exemplo para leitura e escrita em C++ usando o std , cmais_ex1.cpp
     - Código exemplo removendo o std do código utilizando o namespace , cmais_ex2.cpp
     - Classes, objectos e métodos em C++
@@ -82,3 +82,6 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Método Construtor - classe_3.cpp
     - Vector - array de vetor dentro da classe, classe_4.cpp
     - Tarefa 6 - Criar uma calculadora simples utilizando classe
+- Aula 9 - Private, Public, Class, Getter e Setter
+    - Correção tarefa calculadora, código do formador - t06-v1-classes-calculadora-formador.cpp
+    - Getter e Setter - t06-v2-getters_setters.cpp
