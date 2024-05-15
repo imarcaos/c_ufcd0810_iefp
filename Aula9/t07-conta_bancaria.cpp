@@ -1,16 +1,16 @@
 // UFCD 0810 - Aula 9 - 15/05/2024 - Marcos Melo
 
 /*
-Exercï¿½cio 7
-Crie uma classe em C++ por forma a registar os movimentos de uma conta bancï¿½ria. Vamos
+Exercício 7
+Crie uma classe em C++ por forma a registar os movimentos de uma conta bancária. Vamos
 considerar os seguintes atributos:
 string data, string descricao, char tipo_movimento (D ou L), float valor.
-Crie um vetor dinï¿½mico para armazenar os movimentos
-?Considere os seguintes mï¿½todos:
+Crie um vetor dinâmico para armazenar os movimentos
+->Considere os seguintes métodos:
 - Registar movimento.
 - Listagem de movimentos.
 - Consulta de saldo.
-Crie um loop na funï¿½ï¿½o main (menu) para solicitar ao utilizador a sua escolha.
+Crie um loop na função main (menu) para solicitar ao utilizador a sua escolha.
 */
 
 
@@ -42,7 +42,7 @@ class Conta{
 
             cout<<"Listagem de movimentos"<<endl<<endl;
             gotoxy(1,1);cout<<"Data";
-            gotoxy(20,1);cout<<"Descriï¿½ï¿½o";
+            gotoxy(20,1);cout<<"Descrição";
             gotoxy(40,1);cout<<"Tipo de movimento";
             gotoxy(65,1);cout<<"Valor";  
 
@@ -87,12 +87,12 @@ int main(){
     
     do{
         system("cls");
-        cout<<"Registo de movimento bancï¿½rio"<<endl;
+        cout<<"Registo de movimento bancário"<<endl;
         cout<<"1-Registar Movimento"<<endl;
         cout<<"2-Listagem de movimentos"<<endl;
         cout<<"3-Consulta de saldo"<<endl;
         cout<<"0-Sair"<<endl;
-        cout<<"Digite a sua opï¿½ï¿½o: "<<endl;
+        cout<<"Digite a sua opção: "<<endl;
         cin>>opcao;
         switch (opcao){
             case 0:
@@ -104,10 +104,10 @@ int main(){
                 cout<<"Data(dd/mm/aaaa): ";
                 fflush(stdin);
                 getline(cin, C.data);
-                cout<<"Descriï¿½ï¿½o: ";
+                cout<<"Descrição: ";
                 fflush(stdin);
                 getline(cin, C.descricao);
-                cout<<"Tipo de movimento (D-depï¿½sito L-levantamento): ";
+                cout<<"Tipo de movimento (D-depósito L-levantamento): ";
                 cin>>C.tipo_movimento;
                 cout<<"Valor: ";
                 cin>>C.valor;  
@@ -122,7 +122,7 @@ int main(){
                 C.saldoConta();
                 break;
             default:
-                cout<<"Opï¿½ï¿½o invï¿½lida. Enter para continuar..";
+                cout<<"Opção inválida. Enter para continuar..";
                 getch();
         }      
         
