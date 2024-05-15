@@ -82,6 +82,8 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Método Construtor - classe_3.cpp
     - Vector - array de vetor dentro da classe, classe_4.cpp
     - Tarefa 6 - Criar uma calculadora simples utilizando classe
-- Aula 9 - Private, Public, Class, Getter e Setter
+- Aula 9 - Private, Public, Class, Vector, Getter e Setter
     - Correção tarefa calculadora, código do formador - t06-v1-classes-calculadora-formador.cpp
     - Getter e Setter - t06-v2-getters_setters.cpp
+    - Vetor dinâmico - classe_vetor.cpp e vetor_dinamico_3.cpp
+    - Tarefa 7, conta bancária, registar movimentos - t07-conta_bancaria.cpp
