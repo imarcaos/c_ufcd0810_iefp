@@ -87,3 +87,6 @@ Sempre que houver enunciados, estarão juntamente com o código.
     - Getter e Setter - t06-v2-getters_setters.cpp
     - Vetor dinâmico - classe_vetor.cpp e vetor_dinamico_3.cpp
     - Tarefa 7, conta bancária, registar movimentos - t07-conta_bancaria.cpp
+- Aula 10 - Penúltima aula, questões e exercícios.
+    - Foi colocado um questionário para entregrar no teams (2 a 21)
+    - exercícios do 22 ao 25
