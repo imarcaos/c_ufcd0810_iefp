@@ -90,3 +90,4 @@ Sempre que houver enunciados, estarão juntamente com o código.
 - Aula 10 - Penúltima aula, questões e exercícios.
     - Foi colocado um questionário para entregrar no teams (2 a 21)
     - exercícios do 22 ao 25
+- UFCD (Matéria) finalizada
